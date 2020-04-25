@@ -1,0 +1,19 @@
+body {
+    background-color: peru;
+}
+  
+h1 {
+    color: white;
+}
+
+.form {
+    display: none;
+}
+
+.greeting {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
