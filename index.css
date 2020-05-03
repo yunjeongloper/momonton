@@ -1,19 +1,123 @@
+html {
+    height: 100%;
+}
+  
 body {
-    background-color: peru;
+    background-color: rgb(31, 31, 46);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    min-height: 250px;
+    padding: 60px 0px 50px 0px;
+    background-color: black;;
 }
   
 h1 {
     color: white;
+    font-weight: 300;
+    font-size: 5em;
+    margin: 0px 0px 15px 0px;
 }
 
-.form {
+.todo {
+    margin-top: 15px;
+    height: 50px;
+    overflow-y: scroll;
+}
+
+.nameForm {
+    margin-bottom: 20px;
+}
+
+.nameForm,
+.infoForm {
     display: none;
+    text-align: center;
+}
+
+.nameForm input,
+.todoForm input {
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    width: 250px;
+    color: white;
+}
+
+.nameForm input {
+    font-size: 28px;
 }
 
 .greeting {
     display: none;
+    color: white;
+    font-weight: 300;
+    margin: 0px;
+    margin-bottom: 15px;
 }
 
 .showing {
     display: block;
+    animation: fadeIn .5s linear;
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.weather {
+    position: absolute;
+    color: black;
+    top: 15px;
+    right: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: flex;
+    color: white;
+    margin: auto;
+    width: 250px;
+    justify-content: space-between;
+    font-size: 20px;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+ul li button {
+    color: white;
+    background-color: transparent;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

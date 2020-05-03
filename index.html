@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>NomadCodersYJJ VanilaJS Final</title>
+    <meta charset="UTF-8" />
     <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="js-clock">
-      <h1>00:00:00</h1>
+    <span class="js-weather weather"></span>
+    <div class="container">
+      <form class="js-nameForm nameForm">
+        <input type="text" id="name" placeholder="What is your name?" />
+      </form>
+      <div class="js-infoForm infoForm">
+        <h2 class="js-greeting greeting"></h2>
+        <div class="js-clock">
+          <h1>00:00:00</h1>
+        </div>
+        <form class="js-todoForm todoForm">
+          <input type="text" id="todo" placeholder="What to do?" autofocus />
+        </form>
+        <div class="todo">
+          <ul class="js-todoList"></ul>
+        </div>
+      </div>
     </div>
-
-    <h2 class="js-greeting greeting"></h2>
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name" />
-      <!-- <button type="submit" onclick="handleSubmit()">Submit</button> -->
-    </form>
-    <!-- <script src="index.js"></script> -->
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="whether.js"></script>
   </body>
 </html>
